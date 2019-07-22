@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GraffitiClass</class>
+ <widget class="QMainWindow" name="GraffitiClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>580</width>
+    <height>592</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Graffiti</string>
+  </property>
+  <property name="locale">
+   <locale language="English" country="UnitedStates"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="centralWidgetHorizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="toolbarVerticalLayout">
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>350</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="title">
+         <string>graffiti properties</string>
+        </property>
+        <layout class="QVBoxLayout" name="groupBoxVerticalLayout">
+         <item>
+          <widget class="QLabel" name="inputFilePathLabel">
+           <property name="text">
+            <string>in Picture path</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="inputFilePathBoxLayout">
+           <item>
+            <widget class="QLineEdit" name="inputFilePathLineEdit">
+             <property name="inputMethodHints">
+              <set>Qt::ImhUrlCharactersOnly</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="inputFilePathToolButton">
+             <property name="text">
+              <string>...</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="inputFilePathStatuLabel">
+           <property name="font">
+            <font>
+             <family>Cambria</family>
+             <italic>true</italic>
+            </font>
+           </property>
+           <property name="text">
+            <string>invaild path!</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="testCompareAlgorithmLabel">
+           <property name="text">
+            <string>test compare algorithm</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="testPictureLabel">
+           <property name="text">
+            <string>test picture</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="textPIctureHorizontalLayout">
+           <item>
+            <widget class="QLineEdit" name="testPicturePathLineEdit"/>
+           </item>
+           <item>
+            <widget class="QToolButton" name="testPicturePathToolButton">
+             <property name="text">
+              <string>...</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="testPicturePathStatuLabel">
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <italic>true</italic>
+            </font>
+           </property>
+           <property name="text">
+            <string>invaild path!</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="criterionLabel">
+           <property name="text">
+            <string>Criterion</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="modeComboBox">
+           <property name="inputMethodHints">
+            <set>Qt::ImhNone</set>
+           </property>
+           <property name="editable">
+            <bool>false</bool>
+           </property>
+           <property name="currentText">
+            <string/>
+           </property>
+           <property name="currentIndex">
+            <number>-1</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="pixelRadiusHorizontalLayout">
+           <item>
+            <widget class="QLabel" name="pixelRadiusLabel">
+             <property name="text">
+              <string>pixelRadius</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QDoubleSpinBox" name="pixelRadiusDoubleSpinBox">
+             <property name="decimals">
+              <number>6</number>
+             </property>
+             <property name="minimum">
+              <double>0.001000000000000</double>
+             </property>
+             <property name="maximum">
+              <double>99.999999000000003</double>
+             </property>
+             <property name="value">
+              <double>10.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="testHorizontalLayout">
+           <item>
+            <widget class="QPushButton" name="testStartPushButton">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>Start test</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="drawModeLabel">
+           <property name="text">
+            <string>draw mode</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="drawModeComboBox"/>
+         </item>
+         <item>
+          <widget class="Line" name="line_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="outputFilePathLabel">
+           <property name="text">
+            <string>out Graffiti path</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="outputFilePathHBoxLayout">
+           <item>
+            <widget class="QLineEdit" name="outputFilePathLineEdit">
+             <property name="inputMethodHints">
+              <set>Qt::ImhUrlCharactersOnly</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QToolButton" name="outputFilePathToolButton">
+             <property name="text">
+              <string>...</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="outputFilePathStatuLabel">
+           <property name="font">
+            <font>
+             <family>Calibri</family>
+             <italic>true</italic>
+            </font>
+           </property>
+           <property name="text">
+            <string>invaild path!</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="controlHorizontalLayout">
+        <item>
+         <widget class="QPushButton" name="startPushButton">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Start</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="stopPushButton">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Stop</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="terminatePushButton">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Terminate</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTextBrowser" name="outputTextBrowser">
+        <property name="documentTitle">
+         <string>output</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QLabel" name="showPictureLabel">
+      <property name="text">
+       <string>no file</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="showTestPictureLabel">
+      <property name="text">
+       <string>no test file</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="graffitiFileLabel">
+      <property name="text">
+       <string>graffiti file</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>580</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Graffiti.qrc"/>
+ </resources>
+ <connections/>
+</ui>
