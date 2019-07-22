@@ -1,8 +1,8 @@
 #pragma once
 #include <vector>
 #include <cmath>
-#include <Windows.h>
-#include <iostream>
+//#include <Windows.h>
+//#include <iostream>
 
 using namespace std;
 double getSSIM_CPU(vector<vector<int>> s1, vector<vector<int>> s2, int h, int w, int bit, double pixelRadius);
